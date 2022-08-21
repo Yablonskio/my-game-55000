@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- FOUNTAIN -->
+<div class="coinHole">
+    <div class="fountain"></div>
+</div>
+<!-- CORRIDOR -->
+<div id="corridor">
+    <div id="firstCorridor">
+        <div id="firstCorridorEntrails"></div>
+        <div id="borderFirstCorridor"></div>
+    </div>
+    <div id="secondCorridor">
+        <div id="secondCorridorEntrails"></div>
+        <div id="borderSecondCorridor"></div>
+    </div>
+    <div id="thirdCorridor">
+        <div id="thirdCorridorEntrails"></div>
+        <div id="borderThirdCorridor"></div>
+    </div>
+    <div id="fourthCorridor">
+        <div id="fourthCorridorEntrails"></div>
+        <div id="borderFourthCorridor"></div>
+    </div>
+
+</div>
+<div id="scene">
+    <div id="coins">
+        <div class="coin" id="coin1"></div>
+        <div class="coin" id="coin2"></div>
+        <div class="coin" id="coin3"></div>
+    </div>
+    <div id="hero" style="width: 50px; height: 100px; left: 100px;
+    top: 100px;">
+        <div>
+            <div id="weapon">
+                <div id="sword"></div>
+                <div id="trident"></div>
+            </div>
+        </div>
+    </div>
+<!-- TO CLASS ENEMY ADDED STYLE WIDTH & HEIGHT -->
+    <div class="enemy" id="firstEnemy" style="width: 50px;
+    height: 100px;"></div>
+    <div class="enemy" id="secondEnemy" style="width: 50px;
+    height: 100px;"></div>
+    <div class="enemy" id="thirdEnemy" style="width: 50px;
+    height: 100px;"></div>
+
+<!-- HERE EVERYTHING IS BELONG ON TOOLTIP -->
+    <div id="toolTip">
+        <div id="HPTip">
+            <div class="heartLeft"><div class="heartRight"></div></div>
+            <div class="heartLeft"><div class="heartRight"></div></div>
+            <div class="heartLeft"><div class="heartRight"></div></div>
+            <div class="heartLeft"><div class="heartRight"></div></div>
+            <div class="heartLeft"><div class="heartRight"></div></div>
+        </div>
+        <div id="moneyParent">Денег: <div id="money">0</div></div>
+    </div>
+</div>
+<script src="logics/jquery-3.6.0.min.js"></script>
+<script src="logics/variableBase.js"></script>
+<script src="logics/Scene.js"></script>
+<script src="logics/Hero.js"></script>
+<script src="logics/Corridor.js"></script>
+<script src="logics/Fountain.js"></script>
+<script src="logics/Enemy.js"></script>
+<script src="logics/ToolTip.js"></script>
+<script src="logics/main.js"></script>
+<script src="logics/controls.js"></script>
+
+
+</body>
+</html>

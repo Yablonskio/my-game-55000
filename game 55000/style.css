@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    cursor: default;
+}
+body {
+    background-image: url("/img/tile.png");
+    overflow: hidden;
+}
+/* ALL IN CORRIDOR */
+#corridor {
+    width: 100vw;
+    height: 1px;
+}
+#firstCorridor, #secondCorridor {
+    width: 100vw;
+    height: 50px;
+    position: absolute;
+    display: flex;
+
+}
+#secondCorridor {
+    bottom: 0;
+}
+#firstCorridorEntrails, #secondCorridorEntrails {
+    width: 400px;
+    height: 50px;
+    background-image: url("/img/tile.png");
+    z-index: 19;
+    left: calc(50% - 200px);
+    position: absolute;
+}
+#borderFirstCorridor, #borderSecondCorridor {
+    width: 100vw;
+    height: 50px;
+    background-image: url("/img/bricks.png");
+}
+#thirdCorridor, #fourthCorridor {
+    width: 50px;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+
+}
+#fourthCorridor {
+    right: 0;
+}
+#thirdCorridorEntrails, #fourthCorridorEntrails {
+    width: 50px;
+    height: 400px;
+    background-image: url("/img/tile.png");
+    z-index: 19;
+    top: calc(50% - 200px);
+    position: absolute;
+}
+#borderThirdCorridor, #borderFourthCorridor {
+    width: 50px;
+    height: 100vh;
+    background-image: url("/img/bricks.png");
+}
+/* ALL IN SCENE */
+#scene {
+    width: calc(100vw - 100px);
+    height: calc(100vh - 100px);
+    position: relative;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#hero {
+    position: relative;
+    z-index: 20;
+}
+#hero>div:first-child {
+    background-image: url('/img/musketeer.png');
+}
+#weapon {
+    position: relative;
+    height: 100px;
+    width: 50px;
+    transition: linear 0.2s;
+
+}
+#sword {
+    background-image: url('/img/sword.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: rotate(10deg);
+    transition: 300ms linear;
+    right: -10px;bottom: 50px;
+    width: 10px; height: 90px;
+}
+#trident {
+    display: none;
+    right: -10px;
+    bottom: 50px;
+}
+.enemy {
+    position: absolute;
+    background-image: url("/img/zoombie.png");
+    width: 50px;
+    height: 100px;
+    transition: 0.1s;
+}
+
+/* TOOLTIP */
+#toolTip {
+    width: 100%;
+    top: -100px;
+    height: 10vh;
+    position: relative;
+    background: rgba(0, 0, 0, 0.2);
+}
+#HPTip {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    right: 50px;
+    top: 25px;
+}
+.heartLeft, .heartRight {
+    width: 26px;
+    height: 50px;
+    background-image: url("/img/heartLeft.png");
+    background-repeat: no-repeat;
+    position: relative;
+    margin-right: 45px;
+}
+.heartRight {
+    background-image: url("/img/heartRight.png");
+    background-repeat: no-repeat;
+    margin: 0;
+    position: absolute;
+    left: 100%;
+}
+#moneyParent {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+/* FOUNTAIN */
+.coinHole {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fountain {
+    width: 400px;
+    height: 400px;
+    display: none;
+    background-image: url("/img/fountain.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 20;
+    position: relative;
+
+}
+
+#coins {
+    display: none;
+}
+.coin {
+    transition: .3s;
+    position: absolute;
+    margin: auto;
+    z-index: 21;
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+#coin1 {
+    background-image: url('/img/coin1.png');
+}
+#coin2 {
+    background-image: url('/img/coin2.png');
+}
+#coin3 {
+    background-image: url('/img/coin3.png');
+}
+#moneyParent, #money {
+    font-family: Arial;
+    display: inline;
+    font-size: 42px;
+    color: white;
+}
+
+
+
+
+
+
+
+
